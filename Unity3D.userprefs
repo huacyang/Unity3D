@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\updateScore.js">
+    <Files>
+      <File FileName="Assets\Scripts\gui.js" Line="9" Column="1" />
+      <File FileName="Assets\Scripts\randomSpawn.js" Line="11" Column="32" />
+      <File FileName="Assets\Scripts\playerController.js" Line="50" Column="22" />
+      <File FileName="Assets\Scripts\playerFire.js" Line="9" Column="67" />
+      <File FileName="Assets\Scripts\updateScore.js" Line="5" Column="29" />
+      <File FileName="Assets\Scripts\onCollision.js" Line="4" Column="29" />
+      <File FileName="Assets\Scripts\scoreValue.js" Line="3" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
