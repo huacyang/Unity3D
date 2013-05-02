@@ -1,6 +1,6 @@
 #pragma strict
 
-var moveSpeed = 10;
+private var moveSpeed = 800;
 var rotationSpeed = 3;
  
 private var currentObject : Transform;

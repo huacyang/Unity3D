@@ -1,14 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\updateScore.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\randomSpawn.js">
     <Files>
-      <File FileName="Assets\Scripts\gui.js" Line="9" Column="1" />
-      <File FileName="Assets\Scripts\randomSpawn.js" Line="11" Column="32" />
-      <File FileName="Assets\Scripts\playerController.js" Line="50" Column="22" />
-      <File FileName="Assets\Scripts\playerFire.js" Line="9" Column="67" />
-      <File FileName="Assets\Scripts\updateScore.js" Line="5" Column="29" />
-      <File FileName="Assets\Scripts\onCollision.js" Line="4" Column="29" />
-      <File FileName="Assets\Scripts\scoreValue.js" Line="3" Column="27" />
+      <File FileName="Assets\Scripts\gui.js" Line="27" Column="26" />
+      <File FileName="Assets\Scripts\randomSpawn.js" Line="9" Column="33" />
+      <File FileName="Assets\Scripts\playerController.js" Line="23" Column="2" />
+      <File FileName="Assets\Scripts\playerFire.js" Line="8" Column="57" />
+      <File FileName="Assets\Scripts\updateScore.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\onCollision.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\scoreValue.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\bgMusic.js" Line="23" Column="23" />
+      <File FileName="Assets\Scripts\playAgain.js" Line="7" Column="26" />
+      <File FileName="Assets\Scripts\autoTargetPlayer.js" Line="3" Column="26" />
+      <File FileName="Assets\Scripts\fire.js" Line="29" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

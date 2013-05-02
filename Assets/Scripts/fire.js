@@ -26,7 +26,7 @@ function Update() {
 		nextFire = Time.time + fireRate;
 		spawnCount++;
 		var clone : GameObject = Instantiate (weapon, transform.position, transform.rotation);
-		clone.rigidbody.AddRelativeForce(Vector3.forward * 550); 
+		clone.rigidbody.AddRelativeForce(Vector3.forward * 1000); 
 		Physics.IgnoreCollision(clone.collider, transform.root.collider);
 	}
 }

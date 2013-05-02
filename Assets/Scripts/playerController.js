@@ -6,13 +6,21 @@
  */
 var moveSpeed = 10;
 var spawnPoint : GameObject;
+var mesh : GameObject;
 
+private var invincible : boolean = false;
 private var upAxis : Vector3;
 private var mouseScreenPosition : Vector3;
 private var mouseWorldSpace : Vector3;
 
-function Start() {
-	
+function applyDMG() {
+	gameObject.transform.position = spawnPoint.transform.position;
+	gameObject.transform.rotation = spawnPoint.transform.rotation;
+	gameObject.GetComponent(gui).health--;
+	invincible = true;
+	yield WaitForSeconds(5.0);
+	invincible = false;
+	mesh.renderer.enabled = true;
 }
 
 // FixedUpdate is a built-in unity function that is called every fixed framerate frame.
@@ -45,13 +53,22 @@ function Update() {
 	transform.LookAt(mouseWorldSpace, upAxis);
 	//zero out all rotations except the axis I want
 	transform.eulerAngles = new Vector3(0,0,transform.eulerAngles.z);
+	
+	if (invincible) {
+		if (mesh.renderer.enabled)
+			mesh.renderer.enabled = false;
+		else
+			mesh.renderer.enabled = true;
+	}
+	
 }
 
 function OnCollisionEnter(collision : Collision) {
 	rigidbody.velocity = Vector3.zero;
-	gameObject.transform.position = spawnPoint.transform.position;
-	gameObject.transform.rotation = spawnPoint.transform.rotation;
-	gameObject.GetComponent(gui).health--;
+	
+	if (!invincible) {
+		applyDMG();
+	}
 }
 
 // Require a Rigidbody component to be attached to the same GameObject.
